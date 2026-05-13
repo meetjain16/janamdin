@@ -36,7 +36,7 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.2 }}
           className="font-script text-3xl text-rose md:text-4xl"
         >
-          happy birthday, my dearest
+          happy birthday, Ullu
         </motion.p>
 
         <motion.h1
