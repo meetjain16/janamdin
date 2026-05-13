@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
-import { PhotoPlaceholder } from "./PhotoPlaceholder";
 
 const items = [
-  { caption: "the golden hour", date: "summer", h: "tall" },
-  { caption: "that one trip", date: "spring", h: "short" },
-  { caption: "midnight laughs", date: "always", h: "medium" },
-  { caption: "soft evenings", date: "october", h: "tall" },
-  { caption: "your favorite cafe", date: "weekends", h: "short" },
-  { caption: "us, again", date: "anytime", h: "medium" },
-  { caption: "city lights", date: "december", h: "tall" },
-  { caption: "a quiet day", date: "march", h: "short" },
+  // { caption: "the golden hour", date: "summer", h: "tall", image: "/src/assets/h9.jpeg" },
+  // { caption: "that one trip", date: "spring", h: "short", image: "/src/assets/h10.jpeg" },
+  { caption: "midnight laughs", date: "always", h: "medium", image: "/src/assets/h13.jpeg" },
+  { caption: "soft evenings", date: "october", h: "tall", image: "/src/assets/h14.jpeg" },
+  { caption: "your favorite cafe", date: "weekends", h: "short", image: "/src/assets/h11.jpeg" },
+  { caption: "us, again", date: "anytime", h: "medium", image: "/src/assets/h12.jpeg" },
+  // { caption: "city lights", date: "december", h: "tall", image: "/src/assets/h7.jpeg" },
+  // { caption: "a quiet day", date: "march", h: "short", image: "/src/assets/h8.jpeg" },
 ];
 
 const heights: Record<string, string> = {
@@ -47,7 +46,12 @@ export function Gallery() {
             >
               <div className="overflow-hidden">
                 <motion.div whileHover={{ scale: 1.08 }} transition={{ duration: 0.7, ease: "easeOut" }}>
-                  <PhotoPlaceholder label={it.caption} aspect={heights[it.h]} />
+                  <img
+                    src={it.image}
+                    alt={it.caption}
+                    className={`${heights[it.h]} w-full object-cover transition-transform duration-700 group-hover:scale-105`}
+                    loading="lazy"
+                  />
                 </motion.div>
               </div>
               <figcaption className="absolute inset-x-0 bottom-0 translate-y-full bg-gradient-to-t from-night/90 to-transparent p-5 text-cream transition-transform duration-500 group-hover:translate-y-0">

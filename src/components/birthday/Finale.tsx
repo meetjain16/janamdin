@@ -91,7 +91,7 @@ export function Finale() {
           transition={{ delay: 3.4, duration: 1.4 }}
           className="mt-12 font-script text-2xl text-gold-soft"
         >
-          here's to your year — your light, your dreams, your whole big universe.
+          here's to your year - your light, your dreams, your whole big universe.
         </motion.p>
 
         <motion.div

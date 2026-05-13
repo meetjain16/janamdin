@@ -1,8 +1,96 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const happyBirthdayMelody = [
+  { freq: 264, dur: 0.34 },
+  { freq: 264, dur: 0.34 },
+  { freq: 297, dur: 0.7 },
+  { freq: 264, dur: 0.7 },
+  { freq: 352, dur: 0.7 },
+  { freq: 330, dur: 1.4 },
+  { freq: 264, dur: 0.34 },
+  { freq: 264, dur: 0.34 },
+  { freq: 297, dur: 0.7 },
+  { freq: 264, dur: 0.7 },
+  { freq: 396, dur: 0.7 },
+  { freq: 352, dur: 1.4 },
+  { freq: 264, dur: 0.34 },
+  { freq: 264, dur: 0.34 },
+  { freq: 528, dur: 0.7 },
+  { freq: 440, dur: 0.7 },
+  { freq: 352, dur: 0.7 },
+  { freq: 330, dur: 0.7 },
+  { freq: 297, dur: 1.4 },
+  { freq: 466, dur: 0.34 },
+  { freq: 466, dur: 0.34 },
+  { freq: 440, dur: 0.7 },
+  { freq: 352, dur: 0.7 },
+  { freq: 396, dur: 0.7 },
+  { freq: 352, dur: 1.4 },
+];
+
+function getAudioContext() {
+  return (window.AudioContext || (window as any).webkitAudioContext) as typeof AudioContext | undefined;
+}
 
 export function MusicPlayer() {
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState(true);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const loopTimerRef = useRef<number | null>(null);
+
+  const stopSong = () => {
+    if (loopTimerRef.current !== null) {
+      window.clearTimeout(loopTimerRef.current);
+      loopTimerRef.current = null;
+    }
+
+    if (audioContextRef.current) {
+      audioContextRef.current.close().catch(() => undefined);
+      audioContextRef.current = null;
+    }
+  };
+
+  const playSong = () => {
+    const AudioCtx = getAudioContext();
+    if (!AudioCtx) return;
+
+    const ctx = new AudioCtx();
+    const gain = ctx.createGain();
+    gain.gain.value = 0.12;
+    gain.connect(ctx.destination);
+    audioContextRef.current = ctx;
+
+    let time = ctx.currentTime + 0.1;
+    happyBirthdayMelody.forEach(({ freq, dur }) => {
+      const osc = ctx.createOscillator();
+      osc.type = "triangle";
+      osc.frequency.value = freq;
+      osc.connect(gain);
+      osc.start(time);
+      osc.stop(time + dur);
+      time += dur;
+    });
+
+    const songLength = (time - ctx.currentTime) * 1000;
+    loopTimerRef.current = window.setTimeout(() => {
+      if (playing) {
+        stopSong();
+        playSong();
+      }
+    }, songLength + 100);
+  };
+
+  useEffect(() => {
+    if (playing) {
+      playSong();
+    } else {
+      stopSong();
+    }
+
+    return () => {
+      stopSong();
+    };
+  }, [playing]);
 
   return (
     <motion.div
@@ -11,11 +99,11 @@ export function MusicPlayer() {
       transition={{ delay: 5, duration: 1 }}
       className="fixed bottom-6 right-6 z-40"
     >
-      <div className="glass flex items-center gap-4 rounded-full p-2 pr-5 shadow-elegant">
+      <div className="glass flex items-center gap-4 rounded-full p-2 pr-5 ">
         <motion.button
           onClick={() => setPlaying((p) => !p)}
           whileTap={{ scale: 0.92 }}
-          className="relative h-14 w-14 overflow-hidden rounded-full"
+          className="relative h-1 w-1  "
           aria-label={playing ? "Pause" : "Play"}
         >
           {/* vinyl */}
@@ -37,10 +125,10 @@ export function MusicPlayer() {
             </div>
           </motion.div>
         </motion.button>
-        <div className="hidden flex-col sm:flex">
-          <p className="font-script text-base text-rose leading-none">now playing</p>
-          <p className="text-xs font-medium text-foreground/70">a song that reminds me of you</p>
-        </div>
+        {/* <div className="hidden flex-col sm:flex">
+          <p className="font-script text-base text-rose leading-none">Happy Birthday</p>
+          <p className="text-xs font-medium text-foreground/70">tap to play the song</p>
+        </div> */}
       </div>
     </motion.div>
   );

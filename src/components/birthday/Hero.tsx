@@ -55,7 +55,7 @@ export function Hero() {
           transition={{ duration: 1.4, delay: 1.4 }}
           className="mx-auto mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/70 md:text-lg"
         >
-          Scroll slowly. Every section was made by hand, by heart — a little universe
+          Scroll slowly. Every section was made by hand, by heart - a little universe
           stitched together from the moments that make you, <em>you</em>.
         </motion.p>
 

@@ -18,14 +18,14 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="relative">
-      <LoadingScreen name="Beautiful" />
+      <LoadingScreen name="Hemanshikaa" />
       <CursorGlow />
       <Hero />
       <Message />
       <Timeline />
       <Special />
       <Gallery />
-      <Wishes />
+      {/* <Wishes /> */}
       <OpenWhen />
       <Finale />
       <MusicPlayer />
