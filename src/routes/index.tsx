@@ -1,26 +1,34 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { LoadingScreen } from "@/components/birthday/LoadingScreen";
+import { CursorGlow } from "@/components/birthday/CursorGlow";
+import { Hero } from "@/components/birthday/Hero";
+import { Message } from "@/components/birthday/Message";
+import { Timeline } from "@/components/birthday/Timeline";
+import { Special } from "@/components/birthday/Special";
+import { Gallery } from "@/components/birthday/Gallery";
+import { Wishes } from "@/components/birthday/Wishes";
+import { OpenWhen } from "@/components/birthday/OpenWhen";
+import { MusicPlayer } from "@/components/birthday/MusicPlayer";
+import { Finale } from "@/components/birthday/Finale";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative">
+      <LoadingScreen name="Beautiful" />
+      <CursorGlow />
+      <Hero />
+      <Message />
+      <Timeline />
+      <Special />
+      <Gallery />
+      <Wishes />
+      <OpenWhen />
+      <Finale />
+      <MusicPlayer />
+    </main>
+  );
 }
