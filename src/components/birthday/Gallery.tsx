@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
 const items = [
-  // { caption: "the golden hour", date: "summer", h: "tall", image: "/src/assets/h9.jpeg" },
-  // { caption: "that one trip", date: "spring", h: "short", image: "/src/assets/h10.jpeg" },
-  { caption: "choti don", date: "bahut pehle", h: "medium", image: "/src/assets/h13.jpeg" },
-  { caption: "badi don", date: "december", h: "tall", image: "/src/assets/h14.jpeg" },
-  { caption: "the OG muskan", date: "timeless", h: "short", image: "/src/assets/h11.jpeg" },
-  { caption: "tum, phir se", date: "bachpan", h: "medium", image: "/src/assets/h12.jpeg" },
-  // { caption: "city lights", date: "december", h: "tall", image: "/src/assets/h7.jpeg" },
-  // { caption: "a quiet day", date: "march", h: "short", image: "/src/assets/h8.jpeg" },
+  // { caption: "the golden hour", date: "summer", h: "tall", image: "/assets/h9.jpeg" },
+  // { caption: "that one trip", date: "spring", h: "short", image: "/assets/h10.jpeg" },
+  { caption: "choti don", date: "bahut pehle", h: "medium", image: "/assets/h13.jpeg" },
+  { caption: "badi don", date: "december", h: "tall", image: "/assets/h14.jpeg" },
+  { caption: "the OG muskan", date: "timeless", h: "short", image: "/assets/h11.jpeg" },
+  { caption: "tum, phir se", date: "bachpan", h: "medium", image: "/assets/h12.jpeg" },
+  // { caption: "city lights", date: "december", h: "tall", image: "/assets/h7.jpeg" },
+  // { caption: "a quiet day", date: "march", h: "short", image: "/assets/h8.jpeg" },
 ];
 
 const heights: Record<string, string> = {

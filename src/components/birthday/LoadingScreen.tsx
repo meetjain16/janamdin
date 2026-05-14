@@ -43,7 +43,7 @@ export function LoadingScreen({ name = "Pyari" }: { name?: string }) {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.8, duration: 1.4 }}
             >
-              A little universe, made with case - just for you
+              A little universe, made with care - just for you
             </motion.p>
 
             <motion.div

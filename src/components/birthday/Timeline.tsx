@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 
 const rowOne = [
-  { caption: "sukoon bhara kunch", image: "/src/assets/h1.jpeg" },
-  { caption: "soneri sham", image: "/src/assets/h2.jpeg" },
-  { caption: "cute si tu", image: "/src/assets/h3.jpeg" },
-  { caption: "thoda sa jaadu", image: "/src/assets/h4.jpeg" },
+  { caption: "sukoon bhara kunch", image: "/assets/h1.jpeg" },
+  { caption: "soneri sham", image: "/assets/h2.jpeg" },
+  { caption: "cute si tu", image: "/assets/h3.jpeg" },
+  { caption: "thoda sa jaadu", image: "/assets/h4.jpeg" },
 ];
 
 const rowTwo = [
-  { caption: "dashing andaz", image: "/src/assets/h5.jpeg" },
-  { caption: "khoobsurt you", image: "/src/assets/h6.jpeg" },
-  { caption: "khwabon wale din", image: "/src/assets/h7.jpeg" },
-  { caption: "sirf tum", image: "/src/assets/h8.jpeg" },
+  { caption: "dashing andaz", image: "/assets/h5.jpeg" },
+  { caption: "khoobsurt you", image: "/assets/h6.jpeg" },
+  { caption: "khwabon wale din", image: "/assets/h7.jpeg" },
+  { caption: "sirf tum", image: "/assets/h8.jpeg" },
 ];
 
 /** Horizontal landscape frame + curtain drape + hang string */
