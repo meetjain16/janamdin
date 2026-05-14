@@ -72,7 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "A Little Universe — Just For You" },
+      { title: "Ullu ka bday" },
       { name: "description", content: "A cinematic birthday surprise — an interactive love letter wrapped in light, music, and memory." },
       { name: "author", content: "Made with love" },
       { property: "og:title", content: "A Little Universe — Just For You" },

@@ -5,7 +5,7 @@ interface PhotoPlaceholderProps {
 }
 
 export function PhotoPlaceholder({
-  label = "Add your photo here",
+  label = "Yahan apni photo add karo",
   className = "",
   aspect = "aspect-[4/5]",
 }: PhotoPlaceholderProps) {

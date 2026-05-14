@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
 const traits = [
-  { title: "Your smile", text: "It rearranges entire rooms. Quietly, instantly, completely.", icon: "✿" },
-  { title: "Your kindness", text: "The kind that doesn't announce itself — it just shows up.", icon: "❀" },
-  { title: "Your beauty", text: "Not the obvious kind. The kind people remember years later.", icon: "✦" },
-  { title: "Your talent", text: "Effortless to watch, hard-earned to live. We see it.", icon: "✺" },
-  { title: "Your energy", text: "A whole season. Warm light wrapped in laughter.", icon: "❋" },
-  { title: "Your personality", text: "Half magnet, half mystery. Always, always you.", icon: "✿" },
-  { title: "Your intelligence", text: "Sharp, soft, curious. The rare kind that listens.", icon: "✦" },
+  { title: "Your smile", text: " Mood ko instantly change kar liye bahit hai — softly, effortlessly.", icon: "✿" },
+  { title: "Your kindness", text: "iska toh kya hi kena itna naram toh koi nhi", icon: "❀" },
+  { title: "Your beauty", text: "no comments...just awww", icon: "✦" },
+  { title: "Your talent", text: "Looks easy from outside, but we know the hard work behind it.", icon: "✺" },
+  { title: "Your energy", text: "Like morning sunlight - warm, hopeful, and impossible to ignore.", icon: "❋" },
+  { title: "Your personality", text: "Thodi chaos, thoda calm — perfectly, unmistakably you.", icon: "✿" },
+  { title: "Your mind", text: "Sharp, curious, and kind - the rare combo everyone needs.", icon: "✦" },
 ];
 
 export function Special() {
@@ -23,9 +23,9 @@ export function Special() {
           transition={{ duration: 1 }}
           className="mb-20 text-center"
         >
-          <p className="font-script text-2xl text-gold-soft">a quick reminder</p>
+          <p className="font-script text-2xl text-gold-soft">just a gentle reminder</p>
           <h2 className="mt-3 font-serif text-5xl font-light text-cream md:text-6xl">
-            Things that make <span className="italic text-gradient-gold">you, you</span>
+            All the things that make <span className="italic text-gradient-gold">you, you</span>
           </h2>
         </motion.div>
 

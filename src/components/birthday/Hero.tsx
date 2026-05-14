@@ -36,7 +36,7 @@ export function Hero() {
           transition={{ duration: 1.2, delay: 0.2 }}
           className="font-script text-3xl text-rose md:text-4xl"
         >
-          happy birthday, Ullu
+          Happy Birthday, Ullu ✨
         </motion.p>
 
         <motion.h1
@@ -45,8 +45,8 @@ export function Hero() {
           transition={{ duration: 1.6, delay: 0.6, ease: "easeOut" }}
           className="mt-6 font-serif text-5xl font-light leading-[1.05] tracking-tight md:text-7xl lg:text-8xl"
         >
-          Today the world celebrates{" "}
-          <span className="italic text-gradient-rose">someone truly special.</span>
+          Aaj ka din officially tumhare naam,
+          <span className="italic text-gradient-rose"> because you're truly one of one.</span>
         </motion.h1>
 
         <motion.p
@@ -55,8 +55,8 @@ export function Hero() {
           transition={{ duration: 1.4, delay: 1.4 }}
           className="mx-auto mt-8 max-w-xl text-base font-light leading-relaxed text-foreground/70 md:text-lg"
         >
-          Scroll slowly. Every section was made by hand, by heart - a little universe
-          stitched together from the moments that make you, <em>you</em>.
+          Aaram se scroll karo… har section mein thoda sa pyaar, thodi si yaadein,
+          aur bahut si <em>tum</em> hai.
         </motion.p>
 
         <motion.div
@@ -70,7 +70,7 @@ export function Hero() {
             className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full px-8 py-4 text-sm font-medium tracking-wide text-night-foreground transition-transform hover:scale-105"
             style={{ background: "var(--gradient-gold)", boxShadow: "var(--shadow-glow)" }}
           >
-            <span className="relative z-10">Begin the Journey</span>
+            <span className="relative z-10">Start the Surprise</span>
             <span className="relative z-10 transition-transform group-hover:translate-x-1">✨</span>
             <div className="absolute inset-0 animate-shimmer opacity-50" />
           </a>
@@ -80,7 +80,7 @@ export function Hero() {
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
             className="mt-8 text-xs tracking-[0.4em] text-foreground/40 uppercase"
           >
-            scroll
+            scroll down
           </motion.div>
         </motion.div>
       </motion.div>

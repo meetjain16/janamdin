@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { PhotoPlaceholder } from "./PhotoPlaceholder";
 
 const wishes = [
-  { from: "Mom", note: "From the very first day, you were our whole sky. Happy birthday, my love.", type: "voice" },
-  { from: "Best Friend", note: "You're the chaos and the calm. I'd choose you in every lifetime.", type: "video" },
-  { from: "Dad", note: "Watching you become you has been the greatest privilege of my life.", type: "voice" },
-  { from: "Sister", note: "I'd fight a dragon for you. Probably. Happy birthday, brat.", type: "video" },
+  { from: "Maa", note: "Jis din tum aayi na, ghar thoda aur roshan ho gaya. Happy birthday, meri bachchi.", type: "voice" },
+  { from: "Best Friend", note: "Tu meri chaos bhi hai aur comfort bhi. Every version of life feels better with you.", type: "video" },
+  { from: "Papa", note: "Tumhe grow karte dekhna meri life ka biggest pride hai. Keep shining.", type: "voice" },
+  { from: "Didi", note: "Main tere liye duniya se lad sakti hoon. Happy birthday, drama queen.", type: "video" },
 ];
 
 export function Wishes() {
@@ -19,9 +19,9 @@ export function Wishes() {
           transition={{ duration: 1 }}
           className="mb-16 text-center"
         >
-          <p className="font-script text-2xl text-rose">from the people who love you</p>
+          <p className="font-script text-2xl text-rose">from the people who love you the most</p>
           <h2 className="mt-3 font-serif text-5xl font-light md:text-6xl">
-            Wishes, <span className="italic text-gradient-rose">delivered</span>
+            Wishes, <span className="italic text-gradient-rose">straight from the heart</span>
           </h2>
         </motion.div>
 

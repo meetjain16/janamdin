@@ -4,27 +4,27 @@ import { useState } from "react";
 const letters = [
   {
     key: "sad",
-    label: "Open when you're sad",
+    label: "When your heart feels heavy",
     icon: "☁",
-    body: "Hey. Breathe. This feeling is a visitor — not a tenant. You've survived every single bad day so far. That's a 100% record. Cry if you need to. Then come back. The world still wants you in it.",
+    body: "Hey, breathe. Yeh phase permanent nahi hai, bas passing cloud hai. Tum har tough day se nikli ho - this one too. Rona ho toh ro lo, then drink water and come back, The world is still better with you in it.",
   },
   {
     key: "stressed",
-    label: "Open when you're stressed",
+    label: "When stress gets too loud",
     icon: "✿",
-    body: "Close your eyes. One thing at a time. You don't have to carry everything today. The to-do list will still be there tomorrow — and so will you, stronger, softer, ready.",
+    body: "Pause for 30 seconds. Eyes closed, shoulders loose. Ek time pe ek kaam enough hai. Tumhe sab kuch aaj hi solve nahi karna. Kal bhi aayega - and you'll handle it, like you always do.",
   },
   {
     key: "miss",
-    label: "Open when you miss me",
+    label: "Agar kabhi galti se yaad aayein meri",
     icon: "❀",
-    body: "I'm thinking about you too. Right now. Even as you're reading this. Distance is just a technicality — the thread between us doesn't break. I'm a call away. Always.",
+    body: "Dont worry will be there, probably at exactly same moment will feel it too. Distance bas map pe hi hai, bas. Humara connection usse bada hai. Call me, text me, even just send a dot -I'll understand.",
   },
   {
     key: "motivation",
-    label: "Open when you need motivation",
+    label: "When you need motivation",
     icon: "✦",
-    body: "Look at everything you've already done. The version of you from five years ago would be in awe. Keep going. The world is quietly rooting for you — and so am I, loudly.",
+    body: "Look how far you've come. 5 saal pehle wali tum aaj wali tum ko dekh ke proud hoti. Bas next small step lo — not perfect, just honest. I'm rooting for you, loudly.",
   },
 ];
 
@@ -42,12 +42,12 @@ export function OpenWhen() {
           transition={{ duration: 1 }}
           className="mb-14 text-center"
         >
-          <p className="font-script text-2xl text-rose">little envelopes</p>
+          <p className="font-script text-2xl text-rose">little notes for your days</p>
           <h2 className="mt-3 font-serif text-5xl font-light md:text-6xl">
-            Open <span className="italic text-gradient-rose">when…</span>
+            Open this <span className="italic text-gradient-rose">when…</span>
           </h2>
           <p className="mx-auto mt-4 max-w-md text-sm text-foreground/60">
-            For the days when words feel heavy. Tap one — I'll be there.
+            For the days that feel a little extra. Tap one — I’m right here.
           </p>
         </motion.div>
 
@@ -97,7 +97,7 @@ export function OpenWhen() {
               <p className="text-center text-lg font-light leading-relaxed text-foreground/85">
                 {active.body}
               </p>
-              <p className="mt-8 text-center font-script text-xl text-foreground/60">— always yours</p>
+              <p className="mt-8 text-center font-script text-xl text-foreground/60">— always, tumhara</p>
               <button
                 onClick={() => setOpen(null)}
                 className="mx-auto mt-6 block text-xs tracking-[0.3em] text-foreground/40 uppercase hover:text-rose"

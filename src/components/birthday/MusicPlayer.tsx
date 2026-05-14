@@ -126,8 +126,8 @@ export function MusicPlayer() {
           </motion.div>
         </motion.button>
         {/* <div className="hidden flex-col sm:flex">
-          <p className="font-script text-base text-rose leading-none">Happy Birthday</p>
-          <p className="text-xs font-medium text-foreground/70">tap to play the song</p>
+          <p className="font-script text-base text-rose leading-none">Happy Birthday, jaan</p>
+          <p className="text-xs font-medium text-foreground/70">gaana chalane ke liye tap karo</p>
         </div> */}
       </div>
     </motion.div>

@@ -1,7 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const FULL_TEXT = `On this day, the universe quietly tilted in your favor. Somewhere between laughter and quiet smiles, you were born — and the world grew softer, warmer, kinder. This little corner of the internet is for the way your eyes light up when you talk about the things you love, for the way you make ordinary days feel like memories worth keeping. Today, we celebrate every version of you.`;
+const FULL_TEXT = `Aaj ke din bahut hi khaas hai aaj bhagwan ne quietly tumhare naam ka ek beautiful ,smart ladki is duniya ko gift main di hai . Tere hone se , sab kuch thoda aur jagmag aur bright aur chamak uth ta hai. Yeh chhota sa page tere liye teri saari chote chote pal jaise jab tu hasti hai, jab tu thodi se nakhre karti hai, apna gam bat-ti hai aur jab bhi apni favourite baatein karti ho, aur sabko apne vash main kar leti ho, ye sab tujho bahut khaas banata hai, to issliye On your birthday, we celebrate every version of you - soft, strong, silly, and magical.`;
 
 export function Message() {
   const ref = useRef<HTMLDivElement>(null);
@@ -33,9 +33,9 @@ export function Message() {
         className="glass relative mx-auto max-w-2xl rounded-3xl p-10 md:p-14"
       >
         <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-gold to-rose px-6 py-1 text-xs font-medium tracking-[0.3em] text-night-foreground uppercase">
-          a letter
+          a little note
         </div>
-        <p className="mb-6 text-center font-script text-3xl text-rose md:text-4xl">to you, with love</p>
+        <p className="mb-6 text-center font-script text-3xl text-rose md:text-4xl">tere liye, bahut sochne ke baad</p>
         <p className="min-h-[10em] text-center text-lg font-light leading-relaxed text-foreground/85 md:text-xl">
           {text}
           {inView && text.length < FULL_TEXT.length && (
@@ -44,7 +44,7 @@ export function Message() {
         </p>
         <div className="mt-10 flex items-center justify-center gap-4">
           <span className="h-px w-12 bg-gold/40" />
-          <span className="font-script text-xl text-foreground/60">always</span>
+          <span className="font-script text-xl text-foreground/60">hamesha tere saath</span>
           <span className="h-px w-12 bg-gold/40" />
         </div>
       </motion.div>

@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 
 const rowOne = [
-  { caption: "soft mornings", image: "/src/assets/h1.jpeg" },
-  { caption: "golden hours", image: "/src/assets/h2.jpeg" },
-  { caption: "wild laughs", image: "/src/assets/h3.jpeg" },
-  { caption: "quiet magic", image: "/src/assets/h4.jpeg" },
+  { caption: "sukoon bhara kunch", image: "/src/assets/h1.jpeg" },
+  { caption: "soneri sham", image: "/src/assets/h2.jpeg" },
+  { caption: "cute si tu", image: "/src/assets/h3.jpeg" },
+  { caption: "thoda sa jaadu", image: "/src/assets/h4.jpeg" },
 ];
 
 const rowTwo = [
-  { caption: "starlit nights", image: "/src/assets/h5.jpeg" },
-  { caption: "little wonders", image: "/src/assets/h6.jpeg" },
-  { caption: "dreamy days", image: "/src/assets/h7.jpeg" },
-  { caption: "forever you", image: "/src/assets/h8.jpeg" },
+  { caption: "dashing andaz", image: "/src/assets/h5.jpeg" },
+  { caption: "khoobsurt you", image: "/src/assets/h6.jpeg" },
+  { caption: "khwabon wale din", image: "/src/assets/h7.jpeg" },
+  { caption: "sirf tum", image: "/src/assets/h8.jpeg" },
 ];
 
 /** Horizontal landscape frame + curtain drape + hang string */
@@ -196,12 +196,12 @@ export function Timeline() {
           transition={{ duration: 1 }}
           className="mb-20 text-center"
         >
-          <p className="font-script text-2xl text-rose">a little gallery of</p>
+          <p className="font-script text-2xl text-rose">ek pyari si jhalak</p>
           <h2 className="mt-3 font-serif text-5xl font-light md:text-6xl">
-            Beautiful <span className="italic text-gradient-rose">You</span>
+           Ati Khoobsurat <span className="italic text-gradient-rose">Tum</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-base font-light leading-relaxed text-foreground/60">
-            Every frame, a heartbeat. Every smile, a whole universe.
+            Har frame ek dhadkan, har muskaan apni chhoti si duniya.
           </p>
         </motion.div>
 

@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { Particles } from "./Particles";
 
-export function LoadingScreen({ name = "Beautiful" }: { name?: string }) {
+export function LoadingScreen({ name = "Pyari" }: { name?: string }) {
   const [done, setDone] = useState(false);
   useEffect(() => {
     const t = setTimeout(() => setDone(true), 4200);
@@ -43,7 +43,7 @@ export function LoadingScreen({ name = "Beautiful" }: { name?: string }) {
               animate={{ opacity: 1 }}
               transition={{ delay: 1.8, duration: 1.4 }}
             >
-              A little universe made just for you
+              A little universe, made with case - just for you
             </motion.p>
 
             <motion.div

@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 const items = [
   // { caption: "the golden hour", date: "summer", h: "tall", image: "/src/assets/h9.jpeg" },
   // { caption: "that one trip", date: "spring", h: "short", image: "/src/assets/h10.jpeg" },
-  { caption: "midnight laughs", date: "always", h: "medium", image: "/src/assets/h13.jpeg" },
-  { caption: "soft evenings", date: "october", h: "tall", image: "/src/assets/h14.jpeg" },
-  { caption: "your favorite cafe", date: "weekends", h: "short", image: "/src/assets/h11.jpeg" },
-  { caption: "us, again", date: "anytime", h: "medium", image: "/src/assets/h12.jpeg" },
+  { caption: "choti don", date: "bahut pehle", h: "medium", image: "/src/assets/h13.jpeg" },
+  { caption: "badi don", date: "december", h: "tall", image: "/src/assets/h14.jpeg" },
+  { caption: "the OG muskan", date: "timeless", h: "short", image: "/src/assets/h11.jpeg" },
+  { caption: "tum, phir se", date: "bachpan", h: "medium", image: "/src/assets/h12.jpeg" },
   // { caption: "city lights", date: "december", h: "tall", image: "/src/assets/h7.jpeg" },
   // { caption: "a quiet day", date: "march", h: "short", image: "/src/assets/h8.jpeg" },
 ];
@@ -28,9 +28,9 @@ export function Gallery() {
           transition={{ duration: 1 }}
           className="mb-16 text-center"
         >
-          <p className="font-script text-2xl text-rose">the photo album</p>
+          <p className="font-script text-2xl text-rose">yaadon ki album</p>
           <h2 className="mt-3 font-serif text-5xl font-light md:text-6xl">
-            Moments, in <span className="italic text-gradient-rose">colour</span>
+            Rangon mein basi <span className="italic text-gradient-rose">yaadein</span>
           </h2>
         </motion.div>
 

@@ -80,9 +80,9 @@ export function Finale() {
           transition={{ delay: 2.6, duration: 1.6 }}
           className="mx-auto mt-10 max-w-xl text-lg font-light leading-relaxed text-cream/80 md:text-xl"
         >
-          Thank you for making life more beautiful.
+          Thank you for making life feel lighter, warmer, and more beautiful.
           <br />
-          For the laughter, the kindness, the quiet magic of just being you.
+          Tumhari hansi, tumhari softness, aur tum hone ki quiet magic ke liye.
         </motion.p>
 
         <motion.p
@@ -91,7 +91,7 @@ export function Finale() {
           transition={{ delay: 3.4, duration: 1.4 }}
           className="mt-12 font-script text-2xl text-gold-soft"
         >
-          here's to your year - your light, your dreams, your whole big universe.
+          This year is yours — tumhari roshni, tumhare sapne, tumhari poori kahaani.
         </motion.p>
 
         <motion.div
@@ -101,7 +101,7 @@ export function Finale() {
           className="mt-16 flex items-center justify-center gap-4 text-cream/40"
         >
           <span className="h-px w-16 bg-gold/40" />
-          <span className="text-xs tracking-[0.4em] uppercase">made with love</span>
+          <span className="text-xs tracking-[0.4em] uppercase">made with pure dil se</span>
           <span className="h-px w-16 bg-gold/40" />
         </motion.div>
       </motion.div>
