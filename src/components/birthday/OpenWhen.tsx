@@ -97,7 +97,7 @@ export function OpenWhen() {
               <p className="text-center text-lg font-light leading-relaxed text-foreground/85">
                 {active.body}
               </p>
-              <p className="mt-8 text-center font-script text-xl text-foreground/60">— always, tumhara</p>
+              <p className="mt-8 text-center font-script text-xl text-foreground/60">— always, there for you</p>
               <button
                 onClick={() => setOpen(null)}
                 className="mx-auto mt-6 block text-xs tracking-[0.3em] text-foreground/40 uppercase hover:text-rose"
